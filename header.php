@@ -56,12 +56,32 @@
 </head>
 
 <body <?php body_class(); ?>>
+<!-- FB LIKE STARTS-->
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_GB/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<!-- FB LIKE ENDS-->
+
+
 <div id="page" class="hfeed">
 <?php do_action( 'before' ); ?>
 	<header id="branding" role="banner">
 		<hgroup>
-			<h1 id="site-title"><a href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-			<h2 id="site-description"><?php bloginfo( 'description' ); ?></h2>
+			<!-- BANNERI TÄS -->
+			<div id="bannerdiv">
+				<img id="banneri" src="http://hanginggarden.rubiini.org/garden/media/banner.jpg"/>
+				<div id="headerdiv">
+					<h1 id="site-title"><a href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+					<!-- <h2 id="site-description"><?php bloginfo( 'description' ); ?></h2> -->
+				</div>
+			</div>
+			
+			
 		</hgroup>
 
 		<nav id="access" role="navigation">
@@ -73,5 +93,3 @@
 	</header><!-- #branding -->
 
 	<div id="main">
-	<!-- BG image 
-	<img class="bg" src="http://hanginggarden.rubiini.org/garden/media/taus.jpg" />-->

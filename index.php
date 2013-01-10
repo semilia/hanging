@@ -13,7 +13,8 @@
  */
 
 get_header(); ?>
-
+		<div id="opaque">
+		</div>
 		<div id="primary">
 			<div id="content" role="main">
 
