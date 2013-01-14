@@ -72,16 +72,17 @@
 <?php do_action( 'before' ); ?>
 	<header id="branding" role="banner">
 		<hgroup>
+		<div id="bannerwrap">
 			<!-- BANNERI TÄS -->
 			<div id="bannerdiv">
-				<img id="banneri" src="http://hanginggarden.rubiini.org/garden/media/banner.jpg"/>
 				<div id="headerdiv">
 					<h1 id="site-title"><a href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 					<!-- <h2 id="site-description"><?php bloginfo( 'description' ); ?></h2> -->
 				</div>
 			</div>
-			
-			
+			<!-- <img id="banneri" src="http://hanginggarden.rubiini.org/garden/media/banner.jpg"/> -->
+				
+		</div>
 		</hgroup>
 
 		<nav id="access" role="navigation">

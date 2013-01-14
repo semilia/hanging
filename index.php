@@ -51,7 +51,9 @@ get_header(); ?>
 				</article><!-- #post-0 -->
 
 			<?php endif; ?>
-
+			<div id="fb-feed">
+			<div class="fb-like-box" data-href="http://www.facebook.com/pages/Hanging-Garden/8829792427" data-width="350px" data-show-faces="false" data-stream="true" data-header="true"></div>
+			</div>
 			</div><!-- #content -->
 		</div><!-- #primary -->
 
